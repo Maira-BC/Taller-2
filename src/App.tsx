@@ -1,10 +1,17 @@
-import './App.css'
+import { useState } from "react"
+import { Routes, Route } from "react-router-dom"
+import Inicio from "./pages/Inicio"
+import Sucursales from "./pages/Sucursales"
+import Ingreso from "./pages/Ingreso"
 
 function App() {
+  const [sucursal, setSucursal] = useState('')
   return (
-    <>
-      <h1>Sistema de atención y gestión de turnos</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="/sucursales" element={<Sucursales setSucursal={setSucursal} />} />
+      <Route path="/ingreso" element={<Ingreso />} />
+    </Routes>
   )
 }
 
