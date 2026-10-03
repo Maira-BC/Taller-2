@@ -17,7 +17,6 @@ function Sucursales({ setSucursal }: SucursalesProps) {
       <Header />
       <main className="sucursales">
         <button className="boton-sucursal" onClick={() => seleccionarSucursal('Sucursal 1')}>
-
             SUCURSAL
             <span>1</span>
         </button>

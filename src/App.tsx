@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Inicio />} />
       <Route path="/sucursales" element={<Sucursales setSucursal={setSucursal} />} />
-      <Route path="/ingreso" element={<Ingreso />} />
+      <Route path="/ingreso" element={<Ingreso sucursal={sucursal} />} />
     </Routes>
   )
 }
