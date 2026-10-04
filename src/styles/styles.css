@@ -90,3 +90,145 @@ header h1 {
     align-items: center;
     justify-content: center;
 }
+
+.ingreso {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    gap: 35px;
+}
+
+.boton-ingreso {
+    width: 225px;
+    height: 125px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    background-color: #f2f2f2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+
+.boton-continuar, .boton-ingreso {
+    text-decoration: none;
+}
+
+.rut {
+    padding-top: 150px;
+}
+
+.formulario-rut {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-rut label {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.formulario-rut .form-control {
+    width: 100%;
+    max-width: 350px;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.teclado-rut {
+    display: grid;
+    grid-template-columns: repeat(3, 55px);
+    gap: 12px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.tecla-rut {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.boton-confirmar-rut {
+    margin-top: 25px;
+}
+
+.mensaje-error {
+    margin: 10px 0 0;
+    color: #b00020;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 120px;
+        padding: 15px;
+    }
+
+    .header img {
+        width: 65px;
+        left: 15px;
+    }
+
+    .header-texto {
+        width: 70%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .header-texto p {
+        margin: 5px 0 0;
+        font-size: 12px;
+    }
+
+    .inicio {
+        min-height: calc(100vh - 120px);
+        padding-top: 180px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .inicio h2 {
+        font-size: 40px;
+    }
+
+    .sucursales {
+        min-height: calc(100vh - 120px);
+        padding-top: 90px;
+        gap: 28px;
+    }
+
+    .ingreso {
+        min-height: calc(100vh - 120px);
+        padding-top: 110px;
+        gap: 30px;
+    }
+
+    .rut {
+        padding-top: 30px;
+    }
+}
