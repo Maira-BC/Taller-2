@@ -179,6 +179,83 @@ header h1 {
     text-align: center;
 }
 
+.turno {
+    min-height: calc(100vh - 140px);
+    padding: 40px 20px;
+}
+
+.contenido-turno {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.contenido-turno h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
+.contenido-turno hr {
+    margin-bottom: 30px;
+}
+
+.seleccion-turno {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccion-turno label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.seleccion-turno .form-select {
+    width: 100%;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.boton-generar {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.turno-generado {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.numero-turno {
+    margin: 10px 0;
+    font-size: 38px;
+}
+
+.boton-confirmar-turno {
+    margin: 25px auto 0;
+    background-color: #f2f2f2;
+}
+
 @media (max-width: 600px) {
     header {
         height: 120px;
@@ -230,5 +307,21 @@ header h1 {
 
     .rut {
         padding-top: 30px;
+    }
+
+    .turno {
+        min-height: calc(100vh - 120px);
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .turno h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .seleccion-turno {
+        max-width: 300px;
     }
 }
