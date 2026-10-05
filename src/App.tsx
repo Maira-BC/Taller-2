@@ -6,6 +6,8 @@ import Ingreso from "./pages/Ingreso"
 import Turno from "./pages/Turno"
 import Rut from "./pages/Rut"
 import type { Turno as TurnoData } from "./data/turnos"
+import Estado from "./pages/Estado"
+import Historial from "./pages/Historial"
 
 function App() {
   const [sucursal, setSucursal] = useState('')
@@ -20,6 +22,8 @@ function App() {
       <Route path="/ingreso" element={<Ingreso sucursal={sucursal} />} />
       <Route path="/turno" element={<Turno sucursal={sucursal} cantidadTurnos={turnos.length} agregarTurno={agregarTurno} />} />
       <Route path="/rut" element={<Rut sucursal={sucursal} />} />
+      <Route path="/estado" element={<Estado sucursal={sucursal} turnos={turnos} setTurnos={setTurnos} />} />
+      <Route path="/historial" element={<Historial sucursal={sucursal} turnos={turnos} />} />
     </Routes>
   )
 }

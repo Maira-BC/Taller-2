@@ -36,7 +36,8 @@ function Turno({ sucursal, cantidadTurnos, agregarTurno }: TurnoProps) {
       numero: nuevoNumero,
       tipo: tipoAtencion,
       estado: 'En espera',
-      sucursal: sucursal
+      sucursal: sucursal,
+      modulo: null
     }
     agregarTurno(nuevoTurno)
     setTurnoGenerado(nuevoNumero)

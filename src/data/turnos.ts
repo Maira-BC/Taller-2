@@ -3,6 +3,7 @@ export type Turno = {
     tipo: string
     estado: string
     sucursal: string
+    modulo: number | null
 }
 
 export const tiposAtencion = [
@@ -11,3 +12,4 @@ export const tiposAtencion = [
     'Becas',
     'Asesoría'
 ]
+
