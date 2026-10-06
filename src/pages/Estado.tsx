@@ -122,7 +122,7 @@ function Estado({ sucursal, turnos, setTurnos }: EstadoProps) {
                     <h3>Siguientes turnos</h3>
                     <ul className="lista-espera">
                         {turnosEnEspera.map((turno) => (
-                            <li key={`${turno.numero}-${turno.numero}`} className="fila-turno">
+                            <li key={`${turno.sucursal}-${turno.numero}`} className="fila-turno">
                                 <span>{turno.numero}</span>
                                 <span>{turno.tipo}</span>
                                 <span>{turno.estado}</span>
