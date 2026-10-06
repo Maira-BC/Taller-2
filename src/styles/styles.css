@@ -69,26 +69,107 @@ header h1 {
 
 .sucursales {
     min-height: calc(100vh - 140px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 150px;
-    gap: 35px;
+    padding: 40px 20px;
 }
 
-.boton-sucursal {
-    width: 200px;
-    height: 100px;
-    border: 1px solid #000000;
-    border-radius: 100px;
+.contenido-sucursales {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
     background-color: #f2f2f2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-    cursor: pointer;
+}
+
+.contenido-sucursales h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.contenido-sucursales hr {
+    margin-bottom: 30px;
+}
+
+.seleccion-sucursal {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.seleccion-sucursal label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.seleccion-sucursal .dropdown {
+    width: 100%;
+}
+
+.selector-sucursal {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.selector-sucursal.dropdown-toggle::after {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.dropdown-menu.menu-sucursales {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-sucursales .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.menu-sucursales .dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.menu-sucursales .dropdown-item.active,
+.menu-sucursales .dropdown-item:active {
+    background-color: #96d4d6;
+    color: #000000;
+}
+
+.distancia-sucursal {
+    color: #555555;
+    font-size: 15px;
+}
+
+.info-sucursal {
+    font-family:'Times New Roman', Times, serif;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+}
+
+.boton-confirmar-sucursal {
+    margin-top: 30px;
+}
+
+.boton-confirmar-sucursal:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
 }
 
 .ingreso {
@@ -463,8 +544,19 @@ header h1 {
 
     .sucursales {
         min-height: calc(100vh - 120px);
-        padding-top: 90px;
-        gap: 28px;
+        padding: 25px 15px;
+    }
+
+    .contenido-sucursales {
+        padding: 20px;
+    }
+
+    .contenido-sucursales h2 {
+        font-size: 26px;
+    }
+
+    .seleccion-sucursal {
+        max-width: 300px;
     }
 
     .ingreso {

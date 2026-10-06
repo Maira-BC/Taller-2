@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import Inicio from "./pages/Inicio"
 import Sucursales from "./pages/Sucursales"
 import Ingreso from "./pages/Ingreso"

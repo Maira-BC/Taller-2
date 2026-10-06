@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
 import type { Turno as TurnoData } from '../data/turnos'
 
@@ -10,8 +10,13 @@ type EstadoProps = {
 }
 
 function Estado({ sucursal, turnos, setTurnos }: EstadoProps) {
+    const navigate = useNavigate()
     const modulos = [1, 2, 3, 4, 5]
     const [mensaje, setMensaje] = useState('')
+
+    const VolverARegistro = () => {
+        navigate('/Turno')
+    }
 
     const turnosEnEspera = turnos.filter(
         (turno) => turno.estado === 'En espera' && turno.sucursal === sucursal
@@ -135,6 +140,8 @@ function Estado({ sucursal, turnos, setTurnos }: EstadoProps) {
                     </div>
                     <div className="acciones-estado">
                         <button type="button" className="boton-llamar" onClick={llamarSiguiente}>LLAMAR SIGUIENTE</button>
+                         <button type="button" className="boton-llamar" onClick={VolverARegistro}>
+                         AÑADIR TURNO</button>
                         <Link to="/historial" className="boton-historial" aria-label="Ver historial">◷</Link>
                     </div>
                     {mensaje && (<p className="mensaje-estado">{mensaje}</p>)}
