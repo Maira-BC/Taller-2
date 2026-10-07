@@ -27,6 +27,9 @@ Está dirigido a personas que necesiten solicitar un turno de atención y para q
 - Finalización de los turnos atendidos
 - Visualización de la cantidad de turnos en espera y atendidos
 - Historial de los turnos atendidos
+- Seleccion de sucursal con vista de la distancia de cada una
+- Seleccion default de sucursal mas cercana
+
 
 ## Tecnologías utilizadas
 
@@ -46,6 +49,7 @@ La carpeta `src` se encuentra organizada de la siguiente manera:
 - `data`: contiene los datos y tipos utilizados para los turnos
 - `pages`: contiene las páginas de la aplicaión
 - `styles`: contiene los estilos CSS del proyecto
+- `services`: contiene las funciones de las APIs que se usaron (nominatim con open street map, web geolocation API).
 
 Además, `App.tsx` contiene las rutas y los datos que necesitan compartir las páginas, mientras que `main.tsx` se encarga de iniciar la aplicación.
 
@@ -65,17 +69,23 @@ npm run dev
 
 ## API pública utilizada
 
-(PENDIENTE)
+- API web de geolocalizacion nativa del navegador
+- API de búsqueda de lugares -> Nominatim(Motor de búsqueda de calles, comunas, etc) con OpenMaps (proveedor del mapa).
 
 ## Uso de Inteligencia Artificial
+- Solucion de errores de carga
+- Busqueda del centro de diferentes comunas de valpaariso
+- fórmula de calculo de distancia
 
 ### Herramienta
 
+Claude
 ChatGPT
 
 ### Propósito
 
 Se utilizó como apoyo cuando alguna parte del código no funcionaba como se esperaba y no se encontraba el problema.
+Encontrar coordenadas de ejemplo de diferentes comunas.
 
 ### Ejemplo de consulta
 
@@ -97,3 +107,5 @@ Cuando algo no funciona es mejor revisar primero el código y los cambios realiz
 
 - Los datos generados durante el uso de la aplicación se mantienen temporalmente por lo que al recargar la página los turnos y la sucursal seleccionada se reinician
 - El ingreso mediante RUT corresponde a una simulación. El sistema realiza una validación básica para permitir el ingreso pero el RUT no se almacena ni se utiliza para identificar al usuario o asociarlo a su turno generado
+- Existen navegadores que pueden no ser compatibles con el servicio de ubicacion 
+- Puede aparecer en pantalla que la sucursal esta a kilometros ya que la API apunta al centro de la comuna
