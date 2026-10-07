@@ -69,8 +69,9 @@ npm run dev
 
 ## API pública utilizada
 
-- API web de geolocalizacion nativa del navegador
-- API de búsqueda de lugares -> Nominatim(Motor de búsqueda de calles, comunas, etc) con OpenMaps (proveedor del mapa).
+- API web de geolocalizacion nativa del navegador https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+- API de búsqueda de lugares -> Nominatim(Motor de búsqueda de calles, comunas, etc) con OpenStreetMap (proveedor del mapa). https://nominatim.org/ , https://www.openstreetmap.org/
+
 
 ## Uso de Inteligencia Artificial
 - Solucion de errores de carga
