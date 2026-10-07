@@ -1,4 +1,9 @@
+
+
 * {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
     box-sizing: border-box;
 }
 
@@ -9,6 +14,8 @@ body {
 }
 
 header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     height: 140px;
     background-color: #96d4d6;
     display: flex;
@@ -25,6 +32,8 @@ header {
 }
 
 header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     margin: 0;
     font-size: 27px;
     font-weight: normal;
@@ -32,6 +41,8 @@ header h1 {
 }
 
 .inicio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     min-height: calc(100vh - 140px);
     display: flex;
     flex-direction: column;
@@ -41,6 +52,8 @@ header h1 {
 }
 
 .inicio h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     margin: 10px 0;
     font-size: 60px;
     font-weight: normal;
@@ -52,6 +65,8 @@ header h1 {
 }
 
 .boton-continuar {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
     width: 50px;
     height: 50px;
     margin-top: 10px;
@@ -89,6 +104,8 @@ header h1 {
 
 .contenido-sucursales hr {
     margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .seleccion-sucursal {
@@ -164,6 +181,8 @@ header h1 {
 }
 
 .boton-confirmar-sucursal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     margin-top: 30px;
 }
 
@@ -274,6 +293,8 @@ header h1 {
 }
 
 .contenido-turno h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     margin-top: 0;
     text-align: center;
     font-size: 32px;
@@ -343,6 +364,8 @@ header h1 {
 }
 
 .contenido-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -351,6 +374,7 @@ header h1 {
 }
 
 .contenido-estado h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 0;
     text-align: center;
     font-size: 32px;
@@ -358,6 +382,8 @@ header h1 {
 }
 
 .contenido-estado h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     text-align: center;
     font-size: 22px;
     font-weight: normal;
@@ -385,17 +411,21 @@ header h1 {
 }
 
 .numero-modulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-size: 26px;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .estado-modulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     font-size: 18px;
 }
 
 .boton-finalizar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 6px 15px;
     border: none;
     border-radius: 3px;
@@ -405,6 +435,7 @@ header h1 {
 }
 
 .lista-espera {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     max-width: 600px;
     margin: 20px auto;
@@ -413,6 +444,7 @@ header h1 {
 }
 
 .fila-turno {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 7px 10px;
@@ -423,6 +455,7 @@ header h1 {
 }
 
 .indicadores {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -431,6 +464,8 @@ header h1 {
 }
 
 .acciones-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -439,10 +474,12 @@ header h1 {
 }
 
 .acciones-estado .boton-llamar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
 }
 
 .boton-llamar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: block;
     width: 200px;
     height: 55px;
@@ -456,6 +493,7 @@ header h1 {
 }
 
 .boton-historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,17 +505,20 @@ header h1 {
 }
 
 .mensaje-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 15px;
     text-align: center;
     font-size: 16px;
 }
 
 .historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     min-height: calc(100vh - 140px);
     padding: 40px 20px;
 }
 
 .contenido-historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -486,6 +527,7 @@ header h1 {
 }
 
 .contenido-historial h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 0;
     text-align: center;
     font-size: 32px;
