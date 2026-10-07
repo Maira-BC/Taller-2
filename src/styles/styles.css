@@ -1,0 +1,676 @@
+
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    height: 140px;
+    background-color: #96d4d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header img {
+    position: absolute;
+    left: 20px;
+    width: 80px;
+    height: auto;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin: 0;
+    font-size: 27px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.inicio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 230px;
+}
+
+.inicio h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin: 10px 0;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.icono-usuario {
+    width: 50px;
+    height: auto;
+}
+
+.boton-continuar {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #96d4d6;
+    border-radius: 50%;
+    background-color: white;
+    color: #96d4d6;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sucursales {
+    min-height: calc(100vh - 140px);
+    padding: 40px 20px;
+}
+
+.contenido-sucursales {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.contenido-sucursales h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.contenido-sucursales hr {
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.seleccion-sucursal {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccion-sucursal label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.seleccion-sucursal .dropdown {
+    width: 100%;
+}
+
+.selector-sucursal {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.selector-sucursal.dropdown-toggle::after {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.dropdown-menu.menu-sucursales {
+    width: 100%;
+    padding: 8px 0;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu-sucursales .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 17px;
+}
+
+.menu-sucursales .dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.menu-sucursales .dropdown-item.active,
+.menu-sucursales .dropdown-item:active {
+    background-color: #96d4d6;
+    color: #000000;
+}
+
+.distancia-sucursal {
+    color: #555555;
+    font-size: 15px;
+}
+
+.info-sucursal {
+    font-family:'Times New Roman', Times, serif;
+    margin: 12px 0 0;
+    text-align: center;
+    font-size: 15px;
+    color: #000000;
+}
+
+.boton-confirmar-sucursal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin-top: 30px;
+}
+
+.boton-confirmar-sucursal:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.ingreso {
+    min-height: calc(100vh - 140px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    gap: 35px;
+}
+
+.boton-ingreso {
+    width: 225px;
+    height: 125px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    background-color: #f2f2f2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+
+.boton-continuar, .boton-ingreso {
+    text-decoration: none;
+}
+
+.rut {
+    padding-top: 150px;
+}
+
+.formulario-rut {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-rut label {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.formulario-rut .form-control {
+    width: 100%;
+    max-width: 350px;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.teclado-rut {
+    display: grid;
+    grid-template-columns: repeat(3, 55px);
+    gap: 12px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.tecla-rut {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.boton-confirmar-rut {
+    margin-top: 25px;
+}
+
+.mensaje-error {
+    margin: 10px 0 0;
+    color: #b00020;
+    text-align: center;
+}
+
+.turno {
+    min-height: calc(100vh - 140px);
+    padding: 40px 20px;
+}
+
+.contenido-turno {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.contenido-turno h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
+.contenido-turno hr {
+    margin-bottom: 30px;
+}
+
+.seleccion-turno {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seleccion-turno label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.seleccion-turno .form-select {
+    width: 100%;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.boton-generar {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.turno-generado {
+    margin-top: 35px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.numero-turno {
+    margin: 10px 0;
+    font-size: 38px;
+}
+
+.boton-confirmar-turno {
+    margin: 25px auto 0;
+    background-color: #f2f2f2;
+}
+
+.estado {
+    min-height: calc(100vh - 140px);
+    padding: 40px 20px;
+}
+
+.contenido-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.contenido-estado h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.contenido-estado h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.modulos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.modulo {
+    width: 150px;
+    padding: 15px;
+    text-align: center;
+}
+
+.modulo h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.numero-modulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.estado-modulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+.boton-finalizar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #96d4d6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+.lista-espera {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.fila-turno {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.indicadores {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.acciones-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.acciones-estado .boton-llamar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.boton-llamar {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    width: 200px;
+    height: 55px;
+    margin: 30px auto 0;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.boton-historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.mensaje-estado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: calc(100vh - 140px);
+    padding: 40px 20px;
+}
+
+.contenido-historial {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+.contenido-historial h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0;
+    text-align: center;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.lista-historial {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 0;
+    list-style: none;
+}
+
+.boton-volver-historial {
+    margin: 25px auto 0;
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 120px;
+        padding: 15px;
+    }
+
+    .header img {
+        width: 65px;
+        left: 15px;
+    }
+
+    .header-texto {
+        width: 70%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .header-texto p {
+        margin: 5px 0 0;
+        font-size: 12px;
+    }
+
+    .inicio {
+        min-height: calc(100vh - 120px);
+        padding-top: 180px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .inicio h2 {
+        font-size: 40px;
+    }
+
+    .sucursales {
+        min-height: calc(100vh - 120px);
+        padding: 25px 15px;
+    }
+
+    .contenido-sucursales {
+        padding: 20px;
+    }
+
+    .contenido-sucursales h2 {
+        font-size: 26px;
+    }
+
+    .seleccion-sucursal {
+        max-width: 300px;
+    }
+
+    .ingreso {
+        min-height: calc(100vh - 120px);
+        padding-top: 110px;
+        gap: 30px;
+    }
+
+    .rut {
+        padding-top: 30px;
+    }
+
+    .turno {
+        min-height: calc(100vh - 120px);
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .turno h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .seleccion-turno {
+        max-width: 300px;
+    }
+
+    .estado {
+        min-height: calc(100vh - 120px);
+        padding: 25px 15px;
+    }
+
+    .contenido-estado {
+        padding: 20px;
+    }
+
+    .contenido-estado h2 {
+        font-size: 26px;
+    }
+
+    .modulos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modulo {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .indicadores {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .historial {
+        min-height: calc(100vh -120px);
+        padding: 25px 15px;
+    }
+
+    .contenido-historial {
+        padding: 20px;
+    }
+
+    .contenido-historial h2 {
+        font-size: 26px;
+    }
+
+    .fila-turno {
+        font-size: 13px;
+        gap: 5px;
+    }
+}
